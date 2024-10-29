@@ -63,6 +63,14 @@ public class MaquinaExpendedoraSimple {
         
     }
     
+    public void vaciarDepositoDinero() {
+        totalDineroAcumulado = 0;
+    }
+    
+    public int getTotalDinero(){
+        return totalDineroAcumulado;
+    }
+    
     /**
      * Imprime un billete para el cliente actual
      */
@@ -79,9 +87,5 @@ public class MaquinaExpendedoraSimple {
         totalDineroAcumulado = totalDineroAcumulado + balanceClienteActual;
         // Queda preparada para el proximo cliente
         balanceClienteActual = 0;
-    }
-    
-    public int getTotalDinero(){
-        return totalDineroAcumulado;
     }
 }
